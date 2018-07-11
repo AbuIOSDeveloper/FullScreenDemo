@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  FullScreenDemo
+//
+//  Created by jefferson on 2018/6/22.
+//  Copyright © 2018年 jefferson. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+#import "ViewController.h"
+#import "BaseViewController.h"
+#import "NextViewController.h"
+#import "FullScreenViewController.h"
+#import "AppDelegate.h"
+#import <Masonry.h>
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define isIOS9                           [[[UIDevice currentDevice]systemVersion] floatValue] >= 9.0
+
+#endif /* PrefixHeader_h */
